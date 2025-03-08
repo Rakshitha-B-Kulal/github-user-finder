@@ -1,38 +1,114 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0dada5;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar button:hover {
+  background-color: #0e8279;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-profile {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.user-profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.user-profile h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.user-profile p {
+  color: #666;
+}
+
+.repository-list {
+  margin-top: 20px;
+}
+
+.repository-list h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.repository-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.repository-list li {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.repository-list li:hover {
+  transform: scale(1.04);
+}
+
+.repository-list a {
+  text-decoration: none;
+  color: #0dada5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.repository-list a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  margin-top: 10px;
 }
